@@ -12,4 +12,8 @@ export class AppController {
   getData(): Message {
     return this.appService.getData();
   }
+  @Get('welcome')
+  getWelcomeData(): Message {
+    return this.appService.getWelcomeData();
+  }
 }
