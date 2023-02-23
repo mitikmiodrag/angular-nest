@@ -11,20 +11,11 @@
 			"src": "dist/apps/angular-nest/**"
 		}
 	],
-	"routes":
-	[
-		{
-			"src": "/api(.*)",
-			"dest": "dist/apps/api/main.js"
-		},
-		{
-			"src": "/" ,
-			"dest": "dist/apps/angular-nest/index.html"
-		},
-		{
-			"src": "/(.*)",
-			"dest": "dist/apps/angular-nest/$1"
-		}
-	]
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "dist/apps/angular-nest/index.html"
+    }
+  ]
 }
 
