@@ -13,16 +13,8 @@
 	],
   "rewrites": [
     {
-      "source": "/api(.*)",
-      "destination": "dist/apps/api/main.js"
-    },
-    {
-      "source": "/" ,
-      "destination": "dist/apps/angular-nest/index.html"
-    },
-    {
       "source": "/(.*)",
-      "destination": "dist/apps/angular-nest/index.html"
+      "destination": "dist/apps/api/main.js"
     }
   ]
 }
