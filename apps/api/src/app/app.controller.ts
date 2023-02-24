@@ -14,6 +14,6 @@ export class AppController {
   }
   @Get('welcome')
   getWelcomeData(): Message {
-    return  this.appService.getWelcomeData();
+    return this.appService.getWelcomeData();
   }
 }
